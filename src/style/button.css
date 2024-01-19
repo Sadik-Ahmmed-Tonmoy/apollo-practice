@@ -1,0 +1,10 @@
+@layer components {
+    .btn {
+      @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+      @apply transition-all
+    }
+    .btn-primary {
+      @apply bg-blue-900 text-white font-bold py-2 px-4 rounded;
+    }
+  }
+  
