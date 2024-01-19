@@ -53,9 +53,9 @@ transition: color 1s ease-in-out;
 .btn-primary{
   animation-name: buttonAnimation;
   animation-duration: 1000ms;
-// animation-iteration-count: infinite;
+animation-iteration-count: infinite;
 // animation-fill-mode: forwards;
-animation-direction: alternate;
+// animation-direction: alternate;
 }
 
 @keyframes buttonAnimation {
@@ -63,7 +63,7 @@ animation-direction: alternate;
     transform: translate(0);
   }
   25% {
-    transform: translate(100px);
+    transform: translateY(100px);
   }
   50% {
     transform: translate(0);
