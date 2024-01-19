@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 20px;
     border: 2px solid black;
+    perspective: 1000px;
 }
 .box-1{
     background-color: red;
@@ -12,7 +12,16 @@
     width: 150px;
     transition-duration: 500ms;
     transition-timing-function: ease;
+    /* transform-origin: top left ; */
 }
 .box-1:hover{
-    transform: translateX(500px);
+    /* transform: translateX(500px); */
+    /* transform: rotate(30deg); */
+    /* transform: rotateX(45deg); */
+    transform: rotateX(90deg);
+    /* transform: rotateY(45deg); */
+    /* transform: rotate3d(1, 1, 1, 30deg); */
+    /* transform: skew(30deg, 30deg); */
+    /* transform: translateZ(100px); */
+    /* transform: scale(1.5); */
 }

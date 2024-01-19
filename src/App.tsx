@@ -7,8 +7,8 @@ const App = () => {
   return (
       <Container>
       {/* <Button border={true} className={"bg-green-500"}/> */}
-      <Button variant={"primary"} className={"bg-blue-500"}>new</Button>
-      {/* <BoxAnimation/> */}
+      <Button  className={""}>new</Button>
+      <BoxAnimation/>
       <Form/>
       </Container>
   

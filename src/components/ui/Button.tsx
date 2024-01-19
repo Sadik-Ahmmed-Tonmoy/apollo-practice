@@ -9,19 +9,19 @@ type TButtonProps = React.DetailedHTMLProps< ButtonHTMLAttributes<HTMLButtonElem
 const Button = forwardRef<TRef, TButtonProps>(({ className, variant = "primary", children, ...rest }, ref) => {
   const getVariant = (variant : TVariant) => {
     switch (variant) {
-      case "primary":
-        return "bg-red-500";
+      // case "primary":
+      //   return "bg-red-500";
       case "secondary":
         return "bg-blue-500";
       default:
-        return "bg-green-500";
+        return "bg-green-";
     }
   };
   return (
     <button
       {...rest}
       ref={ref}
-      className={cn("btn-primary", getVariant(variant), className)}
+      className={cn("btn-primary border border-red-500", getVariant(variant), className)}
     >
       {children}
     </button>
